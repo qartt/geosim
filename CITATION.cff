@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Se usar o GeoSim em aula, artigo ou material didático, cite assim:"
+title: "GeoSim: simulações geofísicas didáticas como Web Components"
+authors:
+  - family-names: Cabral
+    given-names: João
+    affiliation: "Qartt Tecnologia"
+version: 1.0.0
+date-released: 2026-10-01
+license: MIT
+repository-code: "https://github.com/qartt/geosim"
+url: "https://qartt.github.io/geosim/"
+keywords:
+  - geofísica
+  - educação
+  - web components

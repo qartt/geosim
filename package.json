@@ -1,0 +1,59 @@
+{
+  "name": "geosim-br",
+  "version": "1.0.0",
+  "description": "Simulações geofísicas didáticas em Canvas 2D como Web Components, sem dependências: magnetometria, gravimetria, eletrorresistividade, GPR, sísmica de refração e TDEM.",
+  "type": "module",
+  "main": "dist/geosim.esm.js",
+  "module": "dist/geosim.esm.js",
+  "browser": "dist/geosim.min.js",
+  "unpkg": "dist/geosim.min.js",
+  "jsdelivr": "dist/geosim.min.js",
+  "exports": {
+    ".": {
+      "import": "./dist/geosim.esm.js",
+      "default": "./dist/geosim.min.js"
+    },
+    "./methods/*": "./src/methods/*.js"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.js",
+    "dev": "npm run build && npx --yes serve docs"
+  },
+  "keywords": [
+    "geofísica",
+    "geophysics",
+    "web-components",
+    "canvas",
+    "educação",
+    "magnetometria",
+    "gpr",
+    "sísmica",
+    "gravimetria",
+    "resistividade",
+    "tdem"
+  ],
+  "author": "João Cabral — Qartt Tecnologia (https://qartt.com.br)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qartt/geosim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qartt/geosim/issues"
+  },
+  "homepage": "https://qartt.github.io/geosim/",
+  "sideEffects": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.12"
+  }
+}
